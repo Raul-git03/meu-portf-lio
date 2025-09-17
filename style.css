@@ -1,0 +1,177 @@
+body {
+    background-image: linear-gradient(to right, white, #CE2029);
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+/* ====== TEXTOS ====== */
+h1 {
+    text-align: center;
+    color: black;
+}
+h1:hover {
+    color: gray;
+}
+p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+ul {
+    font-size: 25px;
+    margin-top: 1rem;
+}
+li {
+    color: black;
+    font-size: 25px;
+}
+
+/* ====== IMAGEM ====== */
+.perfil {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* ====== CARDS ====== */
+.card {
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    margin: 50px;
+}
+.card-1, .card-2, .card-3, .card-4 {
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card:hover {
+    animation: pulse 0.5s forwards; 
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;  
+    }
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+.botao {
+    display: block;
+    padding: 10px 20px;
+    margin: 40px;
+    margin-top: 170px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    background-color: red;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: darkred;
+    box-shadow: 0 6px 20px rgba(178, 34, 34, 0.7);
+    transform: translateY(-8px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ====== MENU LATERAL ====== */
+nav.menu {
+    width: 50px; /* menu inicial estreito */
+    height: 100vh;
+    background-color: #fdf6f0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: width 0.3s ease;
+    z-index: 10;
+}
+nav.menu.expandido {
+    width: 300px;
+}
+
+/* ====== CONTEÚDO GERAL ====== */
+.container-geral {
+    transition: margin-left 0.3s ease;
+    margin-left: 50px; /* espaço inicial */
+}
+nav.menu.expandido ~ .container-geral {
+    margin-left: 300px; /* empurra conteúdo quando o menu abre */
+}
+
+/* ====== BOTÃO EXPANDIR ====== */
+.btn-expandir {
+    width: 100%;
+    display: flex;
+    padding: 15px 13px;
+}
+.btn-expandir > i {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.btn-expandir > i:hover {
+    color: #CE2029;
+}
+
+/* ====== LISTA DO MENU ====== */
+.options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.options li.item-menu a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+.options li.item-menu a:hover {
+    background-color: rgba(206, 32, 41, 0.15);
+}
+.options li.item-menu a .txt-link {
+    white-space: nowrap;
+    transition: opacity 0.3s ease; 
+}
+.options li.item-menu a .icon > i {
+    font-size: 22px;
+    color: #CE2029;
+}
+ul li a .icon {
+    font-size: 15px;
+    margin-top: 10px;
+}
+ul li a .txt-link {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* ====== RODAPÉ ====== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projects {
+    margin-left: 10px;
+}
