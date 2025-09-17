@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- MENU LATERAL -->
+    <nav class="menu">
+        <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+        </div>
+        <ul class="options">
+            <li class="item-menu">
+                <a href="https://www.instagram.com/021_raulf">
+                    <span class="icon"><i class="bi bi-instagram"></i></span>
+                    <span class="txt-link">Instagram</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="https://wa.me/5564993139106">
+                    <span class="icon"><i class="bi bi-whatsapp"></i></span>
+                    <span class="txt-link">Whatsapp</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- CONTEÚDO GERAL -->
+    <div class="container-geral">
+        <h1>Apresentação de Raul</h1>
+        <img src="images.jpeg" alt="Minha foto" class="perfil">
+        <p>
+            Meu nome é Raul Vieira de Almeida, tenho 17 anos, curso a 3° série do Ensino Médio.
+        </p>
+        <ul>
+            <li>💻 Linguagens de Programação:
+                <ul>
+                    <li>Python <i class="bi bi-filetype-py"></i></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li> 🌐 Tecnologias Web:
+                <ul>
+                    <li>HTML <i class="bi bi-filetype-html"></i></li>
+                    <li>CSS <i class="bi bi-css"></i></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li> 📊 Ferramentas:
+                <ul>
+                    <li>Excel <i class="bi bi-file-earmark-excel"></i></li>
+                    <li>Word <i class="bi bi-file-word"></i></li>
+                </ul>
+            </li>
+        </ul>
+
+        
+ 
+        <h2 class="projects">Meus Projetos:</h2>
+        <main>
+            <div class="card">
+                <p class="card-1">Projeto 1 <a href="repo.zip" class="botao" download="repo.zip">Baixe aqui!</a></p>
+            </div>
+            <div class="card">
+                <p class="card-2">Projeto 2 <a href="" class="botao">Veja aqui!</a></p>
+            </div>
+            <div class="card">
+                <p class="card-3">Projeto 3 <a href="" class="botao">Veja aqui!</a></p>
+            </div>
+            <div class="card">
+                <p class="card-4">Projeto 4 <a href="" class="botao">Veja aqui!</a></p>
+            </div>
+        </main>
+
+        <footer>® Oficial de Raul</footer>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        document.querySelector('.btn-expandir').addEventListener('click', () =>{
+            document.querySelector('nav.menu').classList.toggle('expandido')
+        });
+    </script>
+</body>
+</html>
